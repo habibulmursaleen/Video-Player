@@ -1,0 +1,57 @@
+A)
+
+Interface is a way to determine if something can be classified as a particular type whether or not it has the required characteristics. 
+
+interface Vehicle 
+{
+	int set_num_of_wheels:
+	// ...a set_num_of_wheels property with the value (number literal type)
+
+	int set_num_of_passengers:
+	// ...a set_num_of_passengers property with the value  (number literal type)
+
+	boolean has_gas: 
+	// ...a has_gas property with the value (boolean literal type)
+}
+
+In this code, if we want to make sure Car or plane is a Vehicle, all we need to do is reference its type as Vehicle.
+
+This would pass type-checking!
+
+const car: Vehicle = {
+  	set_num_of_wheels:4,
+	set_num_of_passengers:4,
+	has_gas:true,
+}
+
+const plane: Vehicle = {
+  	set_num_of_wheels:4,
+	set_num_of_passengers:4,
+	has_gas:true,
+}
+
+
+const notADuck: Duck = {}
+// Properties are missing in type '{}'."
+
+Interfaces do not end up in our final JavaScript output.
+
+B) I used Object. 
+
+var car = {
+  set_num_of_wheels: “4”,
+  set_num_of_passengers: “4”,
+  boolean has_gas : true,
+};
+
+var plane = {
+  set_num_of_wheels: “4”,
+  set_num_of_passengers: “4”,
+  boolean has_gas : false,
+};
+
+var x = car; 
+var y= plane; 
+
+x.set_num_of_wheels = 4; 
+

@@ -1,0 +1,25 @@
+Here is the pseudocode for this video player program.
+
+
+Step 01: Create a HTML, CSS and Javascript file.
+Step 02: Link CSS & Js file with HTML file. 
+Step 03: Use video element with Source of the video in html file. 
+Step 04: Make appropriate design for the player in CSS file. 
+Step 05: Create individual function for each task in .js file
+Step 06: Connect event listener in .js file
+
+
+Design Pattern: 
+
+I used a combination of HTML, CSS, and JavaScript to accomplish this task.  
+
+The first step to getting video element on the page is rendering one using the video tag. I needed a variety of controls to manipulate certain parts of the video element's API. Within each video element there are a huge amount of properties we can access with JavaScript to manipulate.
+
+The HTML above contains
+* a .player div which I used for styling is CSS. 
+* a video element with a src attribute referenced
+* a .player-controls div of which had all the controls I wanted to add.
+* a .button div for wrapping the play/pause icons we'll make use of
+* buttons for skipping ahead and backward
+
+My JavaScript code focused on an object-oriented approach. These controls and elements manipulated JavaScript and deal with user interaction on event listeners to do the task. 
